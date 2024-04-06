@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h1> Registration Form </h1>
+        <form action="index.php" method="post">
+            <label for="user-name"> Username : </label>
+            <input type="text" id="user-name" maxlength="16" required placeholder="username">
+           
+            <label for="password"> Password : </label>
+            <input type="password" id="password" minlength="8" required placeholder="password">
+            
+            <label for="email"> Email : </label>
+            <input type="email"  id="email" placeholder="email" required>
+
+            <label for="phone-number"> Contact : </label>
+            <input type="tel" id="phone-number" placeholder="0912-3456-789" pattern="[0-9]{3}, [0-9]{4}, [0-9]{3}">
+            
+
+            <!--
+            <p> Type of Registration : </p>
+            
+            <div class="radio-button"> 
+                <div>
+                    <label for="radio-student"> Student </label>
+                    <input type="radio" id="radio-student" value="Student" checked="">
+                </div>
+                <div>
+                    <label for="radio-admin">Admin</label>
+                    <input type="radio" id="radio-admin" value="Admin" checked="">
+                </div>
+                <div>
+                    <label for="radio-government" > Government</label>
+                    <input type="radio" id="radio-government" value="Government" checked="">
+                </div>
+            </div>
+            -->
+            <label for="payment-type"> Select type of Payment: </label>
+            <select id="payment-type">
+                <option value="visa"> Visa </option>
+                <option value="mastercard"> Mastercard</option>
+                <option value="giftcard"> Giftcard</option>
+            </select>
+            
+            <label for="file"> upload :</label>
+            <input type="file" id="file" accept="image">
+
+            <input type="submit" id="submit" >
+        </form>
+    </section>
+</body>
+</html>
